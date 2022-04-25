@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body{
+    background-color:aqua;
+    background-image: url(fondo9.jpg);
+}
+
+.nav-item {
+    justify-content: center;
+    background-color: white;
+}  
+
+.nav-link{
+    color: black;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: blue;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    animation-name: anima ;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    width: 100px;
+   ;
+}
+
+@keyframes anima{
+    10% {
+        transform: scaleY(0.8);
+    }
+    25%, 26% {
+        transform: translateY(-24px) scaleY(1.001);
+    }
+    35% {
+        transform: translateY(0) scaleY(0.999);
+    }
+    50% {
+        transform: scaleY(0.9);
+    }
+    70% {
+        tranform: scaleY(1);
+    }   
+}
+
+h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    transition: all 1.4s;
+}
+
+h1:hover{
+    font-size: 60px;
+    color: blue;
+}
+
+h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    text-decoration:underline;
+    text-align: center;
+}
+
+.fotopri{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    animation-name: fotopri ;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 9s;
+}
+
+.fotopri:hover{
+    -webkit-animation: 10s aparicion 1;
+}   
+
+@keyframes fotopri{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.8;
+    }
+    transition: all 0.5s;
+    }
+}
+
+h2{
+    font-family:'Permanent Marker', cursive ;
+    font-size: 28px;
+    text-align: center;
+}
+
+h2:hover{
+    font-size: 30px;
+    color: blue;   
+}
+
+.container{
+    width: 95vh;
+} 
+
+.form-group{
+   color: black;
+   text-align: center;
+   font-family: 'Oswald', sans-serif;
+   font-weight: bold;
+   padding: 10px;   
+   
+}
+
+p{
+    font-family:'Oswald', sans-serif ;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px ;
+    color: black;
+}
+
+
+.contenido-inicio {
+    height: auto;
+    }
+
+
+.mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map{
+    width: 1000px;
+    height: 450px;
+}
+.card{
+    margin-left: auto; 
+    margin-right:auto;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.anchoFooter{
+margin-top: 30px;
+}
+
+.redes{
+    display: inline-block;
+}
+
+.bi-facebook{
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: black;
+}
+
+.bi-facebook:hover{
+    color: blue;
+}
+
+.bi-whatsapp{
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: black;
+}
+
+.bi-whatsapp:hover{
+    color: green;
+}
+
+.bi-instagram{
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: black;
+}
+
+.bi-instagram:hover{
+    color: red;
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+   .logo img {
+       width: 80px;
+   }
+    h1{
+       font-size: 40px;
+    }
+    .fotopri{
+        animation: none;
+        height: 300px;
+    }
+
+    .container{
+        width: 70vh;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+    p{
+        font-size: 17px;
+    }
+    .map{
+        width: 250px;
+        height: 350px;
+    }
+    .contenido-inicio{
+        height: 600px;
+    }
+}
+  
