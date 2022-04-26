@@ -134,12 +134,6 @@ p{
     color: black;
 }
 
-
-.contenido-inicio {
-    height: auto;
-    }
-
-
 .mapa{
     display: flex;
     flex-direction: column;
@@ -204,6 +198,10 @@ margin-top: 30px;
     color: red;
 }
 
+.accordion-item{
+    width: 218vh;
+}
+
 @media (min-width: 320px) and (max-width: 768px){
    .logo img {
        width: 80px;
@@ -229,9 +227,11 @@ margin-top: 30px;
     .map{
         width: 250px;
         height: 350px;
+    }  
+    .accordion-item{
+        width: 90vh;
     }
-    .contenido-inicio{
-        height: 600px;
-    }
+    
+
 }
   
